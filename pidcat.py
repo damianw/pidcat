@@ -178,7 +178,6 @@ BACKTRACE_LINE = re.compile(r'^#(.*?)pc\s(.*?)$')
 
 adb_command = base_adb_command[:]
 adb_command.append('logcat')
-adb_command.extend(['-v', 'brief'])
 
 # Clear log before starting logcat
 if args.clear_logcat:
